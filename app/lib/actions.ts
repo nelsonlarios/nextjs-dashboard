@@ -96,6 +96,7 @@ export async function updateInvoice(
   }
 
   revalidatePath("/dashboard/invoices");
+  revalidatePath("/dashboard");
   redirect("/dashboard/invoices");
 }
 
