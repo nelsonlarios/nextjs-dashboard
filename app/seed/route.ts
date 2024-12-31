@@ -101,9 +101,14 @@ async function seedRevenue() {
   return insertedRevenue;
 }
 
+async function dropAllTables() {
+  await client.sql`DROP TABLE IF EXISTS users, invoices, customers, revenue CASCADE`;
+}
+
 export async function GET() {
   try {
     await client.sql`BEGIN`;
+    await dropAllTables();
     await seedUsers();
     await seedCustomers();
     await seedInvoices();
