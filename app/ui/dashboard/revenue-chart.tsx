@@ -9,6 +9,9 @@ import { fetchRevenue } from "@/app/lib/data";
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 export default async function RevenueChart() {
   const revenue = await fetchRevenue();
   const chartHeight = 350;

@@ -14,6 +14,9 @@ const iconMap = {
   invoices: InboxIcon,
 };
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 export default async function CardWrapper() {
   const {
     numberOfInvoices,

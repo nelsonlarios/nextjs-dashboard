@@ -4,6 +4,9 @@ import Image from "next/image";
 import { lusitana } from "@/app/ui/fonts";
 import { fetchLatestInvoices } from "@/app/lib/data";
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 export default async function LatestInvoices() {
   const latestInvoices = await fetchLatestInvoices();
 
