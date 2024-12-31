@@ -36,8 +36,8 @@ const customers = [
   },
   {
     id: "CC27C14A-0ACF-4F4A-A6C9-D45682C144B9",
-    name: "Nilesh Shah",
-    email: "nilesh.shah@bjss.com",
+    name: "Amy Burns",
+    email: "amy@burns.com",
     image_url: "/customers/amy-burns.png",
   },
   {
