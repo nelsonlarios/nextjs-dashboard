@@ -9,9 +9,6 @@ import {
   RevenueChartSkeleton,
 } from "@/app/ui/skeletons";
 
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
-
 export default async function Page() {
   return (
     <main>
