@@ -1,5 +1,7 @@
-## Next.js App Router Course - Starter
+Email: user@nextmail.com
+Password: 123456
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Too seed the database firt login, the go to auth.config.ts change /dashboard to /seed on line 10.
+Then hit localhost:3000/seed
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+Then change it back to /dashboard and refresh the page.
